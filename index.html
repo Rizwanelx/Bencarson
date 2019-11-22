@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Colorib</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/38cb3604d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap&subset=latin-ext" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <div class="sticky">
+        <header class="main-header header_transition">
+            <nav class="navigation_desktop">
+                <ul class="header-items">
+                    <li class="header-home">Home</li>
+                    <li>services</li>
+                    <li>About</li>
+                    <li class="header-me">Me.</li>
+                    <li>Portfolio</li>
+                    <li>client</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <nav class="navigation_mobile">
+                <a class="header-me">Me.</a>
+                <a> <i id="myBtn" class="fas fa-bars"></i></a>
+
+                <div id="navModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <a class="close"> <i class="fas fa-times"></i></a>
+                            <ul class="mobile-header" id="side-nav-model">
+                                <li>Home</li>
+                                <li>services</li>
+                                <li>About</li>
+                                <li>Portfolio</li>
+                                <li>client</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-1 home-text">
+                    <h1>I'm Ben Carson</h1>
+                    <h4>I'm Web Devloper Based in NY City</h4>
+                    <button>Portfolio</button>
+                </div>
+                <div class="col-2">
+                    <img src="image/face.webp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Service Section -->
+
+
+    <section class="services-section">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="row">
+                <div class="col-3 mb-col">
+
+                    <div class="service-item service-flex">
+                        <span><i class="fas fa-pencil-ruler"></i></span>
+                        <div>
+                            <h4>UI/UX Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 pybottom">
+                    <div class="service-item service-flex">
+                        <span><i class="fas fa-database"></i></span>
+                        <div>
+                            <h4>Web Development</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-col">
+                    <div class="service-item service-flex">
+                        <span><i class="fas fa-fill-drip"></i></span>
+                        <div>
+                            <h4>Brand & Logo Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 pybottom">
+                    <div class="service-item service-flex">
+                        <span><i class="fas fa-layer-group"></i></span>
+                        <div>
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section class="aboutme-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="col-4 col-sm-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                </div>
+
+                <div class="col-4 col-sm-2">
+                    <img src="image/face.webp">
+                </div>
+                <div class="col-4 col-sm-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+                    <button>Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="portfolio-section">
+        <h2>My Portfolio</h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-5 col-mr">
+                    <a class="service-move">
+                        <span class="icon-search"></span>
+                        <img src="image/post_2.webp" alt="">
+                    </a>
+                </div>
+
+                <div class="col-5 col-mr">
+                    <span class="icon-search"></span>
+
+                    <img src="image/post_3.webp" alt="">
+                </div>
+
+                <div class="col-5">
+                    <span class="icon-search"></span>
+                    <img src="image/post_4.webp" alt="">
+                </div>
+
+                <div class="col-5 col-mr">
+                    <span class="icon-search"></span>
+                    <img src="image/post_4.webp" alt="">
+                </div>
+
+
+                <div class="col-5 col-mr">
+                    <span class="icon-search"></span>
+                    <img src="image/post_2.webp" alt="">
+                </div>
+
+                <div class="col-5">
+                    <span class="icon-search"></span>
+                    <img src="image/post_3.webp" alt="">
+                </div>
+
+                <div class="col-5 col-mr">
+                    <span class="icon-search"></span>
+                    <img src="image/post_2.webp" alt="">
+                </div>
+
+                <div class="col-5 col-mr">
+                    <span class="icon-search"></span>
+                    <img src="image/post_3.webp" alt="">
+                </div>
+
+                <div class="col-5">
+                    <span class="icon-search"></span>
+                    <img src="image/post_4.webp" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONAIALS SECTION -->
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Testimonial</h2>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                    <span>— Ryan Peters</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CLIENTS SECTION -->
+    <section class="client-section">
+        <div class="container">
+        <h2>Clients</h2>
+        <div class="row">
+            <div class="col-7">
+                <img src="image/logo_1.webp" alt="">
+            </div>
+            <div class="col-7">
+                <img src="image/logo_2.webp" alt="">
+            </div>
+            <div class="col-7">
+                <img src="image/logo_3.webp" alt="">
+            </div>
+            <div class="col-7">
+                <img src="image/logo_4.webp" alt="">
+            </div>
+            <div class="col-7">
+                <img src="image/logo_5.webp" alt="">
+            </div>
+            <div class="col-7">
+                <img src="image/logo_6.webp" alt="">
+            </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section">
+    <div class="container">
+        <h3>Contact Form</h3>
+        <div class="row">
+            <div class="col-8">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="col-8">
+                <input type="email" placeholder="Email address">
+                <input type="email" placeholder="Subject of the message">
+                <textarea placeholder="Type your message here.." style="height:200px"></textarea>
+                <input type="submit" value="Send Message">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+
+        <div class="container">
+            <div class="row">
+            <div class="col-9">
+                <h2>Me Address</h2>
+                <P>203 Fake St. Mountain View, </P>
+                <P> Francisco, California, USA</P>
+            </div>
+
+            <div class="col-9">
+                <h2>Services</h2>
+                <p>Web App </p>
+                <p> Graphic</p>
+                <p> Branding</p>
+            </div>
+
+            <div class="col-9">
+                <h2>Resources</h2>
+                <p>Web App </p>
+                <p> Graphic</p>
+                <p> Branding</p>
+            </div>
+
+            <div class="col-9">
+                <h2>Links</h2>
+                <p>Web App </p>
+                <p> Graphic</p>
+                <p> Branding</p>
+
+            </div>
+
+
+            <div class="col-9">
+                <h2>Follow Me</h2>
+                <span><i class="fab fa-twitter"></i></span>
+                    <span><i class="fab fa-facebook"></i></span>
+                    <span><i class="fab fa-instagram"></i></span>
+                    <span><i class="fab fa-dribble"></i></span>
+                    <span><i class="fab fa-linkedin"></i></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©2019 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+            </div>
+        </div>
+
+
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
