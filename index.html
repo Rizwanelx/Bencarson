@@ -2,46 +2,60 @@
 <html>
 
 <head>
-    <title>Colorib</title>
+    <title>Template</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/38cb3604d0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap&subset=latin-ext" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="sticky">
-        <header class="main-header header_transition">
+        <header class="main-header">
             <nav class="navigation_desktop">
-                <ul class="header-items">
-                    <li class="header-home">Home</li>
-                    <li>services</li>
-                    <li>About</li>
-                    <li class="header-me">Me.</li>
-                    <li>Portfolio</li>
-                    <li>client</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="nav-container">
+                    <div class="logo-box">
+                        <img src="images/logo.png" alt="" class="logo-image">
+                    </div>
+                    <div class="header-item-container">
+                        <ul class="header-items">
+                            <li><a href="#home">Banking</a></li>
+                            <li><a href="#payment">Payment</a></li>
+                            <li><a href="#trading">Escrow</a></li>
+                            <li><a href="#cashcard">Now Card</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                            <li><a>Sign In</a></li>
+                            <li class="border-none">
+                                <p class="global-btn"> Register</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <nav class="navigation_mobile">
-                <a class="header-me">Me.</a>
-                <a> <i id="myBtn" class="fas fa-bars"></i></a>
-
+                <div class="mobiletop-nav">
+                    <div class="header-me">
+                        <img src="images/logo.png" alt="" class="mobile-logo">
+                    </div>
+                    <a class="menu-icon"> <i id="myBtn" class="fas fa-bars"></i></a>
+                </div>
                 <div id="navModal" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modal-body">
                             <a class="close"> <i class="fas fa-times"></i></a>
                             <ul class="mobile-header" id="side-nav-model">
-                                <li>Home</li>
-                                <li>services</li>
-                                <li>About</li>
-                                <li>Portfolio</li>
-                                <li>client</li>
-                                <li>Contact</li>
+                                <li><a href="#home">Banking</a></li>
+                                <li><a href="#payment">Payment</a></li>
+                                <li><a href="#trading">Escrow</a></li>
+                                <li><a href="#cashcard">Now Card</a></li>
+                                <li><a href="#footer">Contact</a></li>
+                                <li><a>Sign In</a></li>
+                                <li class="border-none">
+                                    <p class="global-btn"> Register</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -50,267 +64,211 @@
         </header>
     </div>
 
-    <!-- Home Section -->
-    <section class="home-section">
+    <section id="home" class="home-section mt-100">
         <div class="container">
             <div class="row">
-                <div class="col-1 home-text">
-                    <h1>I'm Ben Carson</h1>
-                    <h4>I'm Web Devloper Based in NY City</h4>
-                    <button>Portfolio</button>
+                <div class="col-1">
+                    <h1>
+                        Banking Compliant <br>
+                        <span>Payments Technology.</span>
+                    </h1>
+                    <p>Banking compliance and B2B payment solutions for highly regulated and cash intensive businesses.</p>
+                    <a class="global-btn start-btn">Get Started</a>
                 </div>
                 <div class="col-2">
-                    <img src="image/face.webp">
+                    <img src="images/payment-tech.png" alt="" class="home-image">
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- Service Section -->
-
-
-    <section class="services-section">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="row">
-                <div class="col-3 mb-col">
-
-                    <div class="service-item service-flex">
-                        <span><i class="fas fa-pencil-ruler"></i></span>
-                        <div>
-                            <h4>UI/UX Design</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3 pybottom">
-                    <div class="service-item service-flex">
-                        <span><i class="fas fa-database"></i></span>
-                        <div>
-                            <h4>Web Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3 mb-col">
-                    <div class="service-item service-flex">
-                        <span><i class="fas fa-fill-drip"></i></span>
-                        <div>
-                            <h4>Brand & Logo Design</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3 pybottom">
-                    <div class="service-item service-flex">
-                        <span><i class="fas fa-layer-group"></i></span>
-                        <div>
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ABOUT ME SECTION -->
-    <section class="aboutme-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="row">
-                <div class="col-4 col-sm-1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                </div>
-
-                <div class="col-4 col-sm-2">
-                    <img src="image/face.webp">
-                </div>
-                <div class="col-4 col-sm-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-                    <button>Contact Me</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION -->
-
-    <section class="portfolio-section">
-        <h2>My Portfolio</h2>
+    <!-- PAYMENT-SECTION -->
+    <section class="payment-section">
         <div class="container">
             <div class="row">
-
-                <div class="col-5 col-mr">
-                    <a class="service-move">
-                        <span class="icon-search"></span>
-                        <img src="image/post_2.webp" alt="">
-                    </a>
+                <div class="col-4">
                 </div>
-
-                <div class="col-5 col-mr">
-                    <span class="icon-search"></span>
-
-                    <img src="image/post_3.webp" alt="">
-                </div>
-
-                <div class="col-5">
-                    <span class="icon-search"></span>
-                    <img src="image/post_4.webp" alt="">
-                </div>
-
-                <div class="col-5 col-mr">
-                    <span class="icon-search"></span>
-                    <img src="image/post_4.webp" alt="">
-                </div>
-
-
-                <div class="col-5 col-mr">
-                    <span class="icon-search"></span>
-                    <img src="image/post_2.webp" alt="">
-                </div>
-
-                <div class="col-5">
-                    <span class="icon-search"></span>
-                    <img src="image/post_3.webp" alt="">
-                </div>
-
-                <div class="col-5 col-mr">
-                    <span class="icon-search"></span>
-                    <img src="image/post_2.webp" alt="">
-                </div>
-
-                <div class="col-5 col-mr">
-                    <span class="icon-search"></span>
-                    <img src="image/post_3.webp" alt="">
-                </div>
-
-                <div class="col-5">
-                    <span class="icon-search"></span>
-                    <img src="image/post_4.webp" alt="">
+                <div class="col-3">
+                    <h2>Buy Sell Products <br> with Confidence.</h2>
+                    <div class="image-container">
+                        <img src="images/time-re.png" alt="">
+                        <span>REAL-TIME PROOF OF FUNDS</span>
+                        <p>Yubi Global provides real-time Proof of Funds to suppliers to qualify their buyers before negotiating the terms of purchase.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="trading" class="trading-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2>We Protect Both Trading Partners.</h2>
+                    <p>Buyers and sellers negotiate on the terms and conditions of payment release <br>before the buyer escrows funds. Funds are only released once the agreed<br> upon terms are satisfied.</p>
+                    <ul>
+                        <li>
+                            <div class="trading-icon">
+                                <img alt="" src="images/terms-icon.png">
+                            </div>
+                            <h4>Both parties agree <br>on terms</h4>
+                        </li>
+                        <li>
+                            <div class="trading-icon">
+                                <img alt="" src="images/funds-icon.png">
+                            </div>
+                            <h4>Buyer<br> escrows funds</h4>
+                        </li>
+                        <li>
+                            <div class="trading-icon">
+                                <img alt="" src="images/deliver-icon.png">
+                            </div>
+                            <h4>Seller delivers<br> the product </h4>
+                        </li>
+                        <li>
+                            <div class="trading-icon">
+                                <img alt="" src="images/aprove-icon.png">
+                            </div>
+                            <h4>Release of funds<br> terms are met</h4>
+                        </li>
+                        <li>
+                            <div class="trading-icon">
+                                <img alt="" src="images/pay-icon.png">
+                            </div>
+                            <h4>We pay<br> the seller</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- TESTIMONAIALS SECTION -->
-
-    <section class="testimonial-section">
+    <section class="technology-section">
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h2>Testimonial</h2>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                    <span>— Ryan Peters</p>
-                    <br><br>
+                    <img src="images/cms-icon.png" alt="">
+                </div>
+                <div class="col-7"></div>
+                <div class="col-8">
+                    <h2>Marketplace<br> Integration <br> Technology.</h2>
+                    <p>Easily integrate the Yubi Global B2B payments and escrow solutions into your online marketplace.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- CLIENTS SECTION -->
-    <section class="client-section">
+    <!-- Banking section -->
+    <section id="payment" class="banking-section">
         <div class="container">
-        <h2>Clients</h2>
-        <div class="row">
-            <div class="col-7">
-                <img src="image/logo_1.webp" alt="">
+            <div class="row">
+                <div class="col-9">
+                    <img src="images/cash-view.png" alt="">
+                </div>
+                <div class="col-10">
+                    <h2>Cash Intensive Banking.</h2>
+                    <p>Cash Intensive businesses require more due diligence and compliance than traditional businesses. Major correspondent banks are derisking and are moving away from supporting cash intensive businesses. Yubi Global has established relationships
+                        with regional banks interested in serving this market.
+                    </p>
+                    <a class="create-btn bg-btn" href="#">Create Your Account</a>
+                </div>
             </div>
-            <div class="col-7">
-                <img src="image/logo_2.webp" alt="">
-            </div>
-            <div class="col-7">
-                <img src="image/logo_3.webp" alt="">
-            </div>
-            <div class="col-7">
-                <img src="image/logo_4.webp" alt="">
-            </div>
-            <div class="col-7">
-                <img src="image/logo_5.webp" alt="">
-            </div>
-            <div class="col-7">
-                <img src="image/logo_6.webp" alt="">
-            </div>
-    </div>
-    </div>
-    </section>
-
-
-    <!-- CONTACT FORM -->
-    <section class="contact-form-section">
-    <div class="container">
-        <h3>Contact Form</h3>
-        <div class="row">
-            <div class="col-8">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-            </div>
-            <div class="col-8">
-                <input type="email" placeholder="Email address">
-                <input type="email" placeholder="Subject of the message">
-                <textarea placeholder="Type your message here.." style="height:200px"></textarea>
-                <input type="submit" value="Send Message">
-            </div>
-        </div>
         </div>
     </section>
 
-    <footer class="footer-section">
+    <!-- CASH SECTION -->
+    <section id="cashcard" class="cash-section">
+        <div class="container">
+            <h2>Cash Management</h2>
+
+            <div class="row">
+                <div class="col-11">
+                    <img src="images/management-icon.png" alt="">
+                </div>
+                <div class="col-11">
+                    <div class="text-icon">
+                        <img src="images/pickup-icon.png" alt="" class="image-icon">
+                        <h4>Armored Cash Pickups</h4>
+                    </div>
+                    <div class="text-icon">
+                        <img src="images/deposit-icon.png" alt="" class="image-icon">
+                        <h4>FDIC Bank Deposits</h4>
+                    </div>
+                    <div class="text-icon">
+                        <img src="images/funnds.png" alt="" class="image-icon">
+                        <h4>Immediate Funds Access</h4>
+                    </div>
+                    <div class="text-icon">
+                        <img src="images/bil-pay.png" alt="" class="image-icon">
+                        <h4>Bill Payments</h4>
+                    </div>
+                    <div class="text-icon">
+                        <img src="images/purhase.png" alt="" class="image-icon">
+                        <h4>Escrow Purchases</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer-section">
 
         <div class="container">
             <div class="row">
-            <div class="col-9">
-                <h2>Me Address</h2>
-                <P>203 Fake St. Mountain View, </P>
-                <P> Francisco, California, USA</P>
-            </div>
+                <div class="col-12">
+                    <img src="images/footer-logo.png" class='footer-logo'>
 
-            <div class="col-9">
-                <h2>Services</h2>
-                <p>Web App </p>
-                <p> Graphic</p>
-                <p> Branding</p>
-            </div>
-
-            <div class="col-9">
-                <h2>Resources</h2>
-                <p>Web App </p>
-                <p> Graphic</p>
-                <p> Branding</p>
-            </div>
-
-            <div class="col-9">
-                <h2>Links</h2>
-                <p>Web App </p>
-                <p> Graphic</p>
-                <p> Branding</p>
-
-            </div>
-
-
-            <div class="col-9">
-                <h2>Follow Me</h2>
-                <span><i class="fab fa-twitter"></i></span>
-                    <span><i class="fab fa-facebook"></i></span>
-                    <span><i class="fab fa-instagram"></i></span>
-                    <span><i class="fab fa-dribble"></i></span>
-                    <span><i class="fab fa-linkedin"></i></span>
+                </div>
+                <div class="col-12">
+                    <a href="" class="btn signin">Sign In</a>
+                    <a href="" class="btn registration">Register</a>
                 </div>
             </div>
-            <div class="copyright">
-                <p>Copyright ©2019 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+            <hr class="hr-line">
+            <div class="row">
+                <div class="col-13">
+                    <div class="footer-nav-container">
+                        <h4>About.</h4>
+                        <ul>
+                            <li><a>About Us</a></li>
+                            <li><a>Sign In</a></li>
+                            <li><a>Register</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-13">
+                    <div class="footer-nav-container">
+                        <h4>Help.</h4>
+                        <ul>
+                            <li><a>Contact & Support</a></li>
+                            <li><a>Privacy Policy</a></li>
+                            <li><a>Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-14">
+                    <h4>Explore.</h4>
+                    <div class="footer-nav-container ">
+                        <div class="explore-box order-2">
+                            <img src="images/banking-icon.png">
+                            <span>Banking</span>
+                        </div>
+                        <div class="explore-box order-1">
+                            <img src="images/escrow-icon.png">
+                            <span>Escrow</span>
+                        </div>
+                        <div class="explore-box order-3">
+                            <img src="images/payments-icon.png">
+                            <span>B2B Payments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>©2019 Yubi Global. All Rights Reserved.</p>
             </div>
         </div>
-
-
-        </footer>
-        <script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
